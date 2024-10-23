@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Estimated Read Time with Shortcode
- * Plugin URI: https://github.com/dietrichmd/wordpress_plugins/
+ * Plugin URI: https://github.com/vestrainteractive/estimated-read-time
  * Description: Estimates and displays the reading time of a post using a shortcode.  Use [estimated_read_time] in post or template.
  * Version: 1.0
  * Author: Vestra Interactive
