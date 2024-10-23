@@ -27,4 +27,14 @@ function estimated_read_time_shortcode() {
 // Register the shortcode
 add_shortcode( 'estimated_read_time', 'estimated_read_time_shortcode' );
 
+// Include the GitHub Updater class
+if ( file_exists( plugin_dir_path( __FILE__ ) . 'class-github-updater.php' ) ) {
+    require_once plugin_dir_path( __FILE__ ) . 'class-github-updater.php';
+}
+
+// Initialize the updater
+add_action( 'init', function() {
+    new GitHub_Updater( 'estimated-read-time', 'vestrainteractive/estimated-read-time/' ); // Replace with your plugin slug and folder name
+});
+
 ?>
